@@ -1,0 +1,12 @@
+[project]
+name = "planify2"
+version = "0.1.0"
+description = "Planify2 monorepo"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["infra"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short"
